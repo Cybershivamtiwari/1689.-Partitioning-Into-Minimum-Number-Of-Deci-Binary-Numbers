@@ -1,0 +1,36 @@
+class Solution:
+    def minPartitions(self, n: str) -> int:
+        return max(n)
+        
+        
+        
+   
+class Solution {
+public:
+    int minPartitions(string n) {
+        char best = '0';
+        for (auto& c : n)
+            if (c > best) best = c;
+        return best - '0';
+    }
+};
+
+
+
+
+
+
+class Solution {
+    public int minPartitions(String n) {
+        char best = '0';
+        for (char c : n.toCharArray())
+            if (c > best) best = c;
+        return best - '0';
+    }
+}
+
+
+
+
+
+const minPartitions = n => Math.max(...n.split(''))
